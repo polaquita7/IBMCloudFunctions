@@ -1,0 +1,1435 @@
+{
+  "intents": [
+    {
+      "intent": "Pedir_Datos_Clima",
+      "examples": [
+        {
+          "text": "¿Cómo está el dia?"
+        },
+        {
+          "text": "¿Hace calor?"
+        },
+        {
+          "text": "¿Está lindo afuera?"
+        },
+        {
+          "text": "¿Cómo está el clima?"
+        },
+        {
+          "text": "¿Que temperatura hay?"
+        },
+        {
+          "text": "¿Va a llover?"
+        },
+        {
+          "text": "¿Está nublado?"
+        },
+        {
+          "text": "¿Que sabés del clima?"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "ciudad",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Base Marambio",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Base Carlini",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Base Orcadas",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Base Esperanza",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Base Belgrano II",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Alta Gracia",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Humahuaca",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Mina Clavero",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "La Quiaca",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Córdoba",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Andalgalá",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Merlo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Santa María",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Chilecito",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Aimogasta",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "San Juan",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Caucete",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Uspallata",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "San Carlos",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "San Martín",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Mendoza",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Punta de Vacas",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "San José de Jachal",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Tunuyan",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Belén",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Tinogasta",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Ushuaia",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Puerto Argentino",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Chapelco",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "El Palomar",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Aeroparque Buenos Aires",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "San Andrés",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Banfield",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "San Isidro",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Mariano Moreno",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "José María Ezeiza",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Don Torcuato",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Ciudad Evita",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Morón",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "La Plata",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "San Miguel",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Quilmes",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Avellaneda",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Lomas de Zamora",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "San Fernando",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Esquel",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Santa Rosa",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Yacimientos Río Turbio",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Tigre",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Ciudad Jardin Lomas del Palomar",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Campo de Mayo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Viedma",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Perito Moreno",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "San Carlos de Bariloche",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "El Calafate",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Puerto Santa Cruz",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Río Gallegos",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Gobernador Gregores",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Punta Indio",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "San Miguel de Tucumán",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Maipú",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Las Flores",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "San Clemente del Tuyú",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Tandil",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Balcarce",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Mar del Plata",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Villa Gesell",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Benito Juárez",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "San Pedro",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Necochea",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "San Antonio de Areco",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Zárate",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Resistencia",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Laboulaye",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Corrientes",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Paso de Los Libres",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Gualeguaychú",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Paraná",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Formosa",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Sauce Viejo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Reconquista",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Sunchales",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Rosario",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Santa Fe",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Termas de Río Hondo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Santiago del Estero",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Chascomus",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Choele Choel",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Río Grande",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Villa La Angostura",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "San Martín de Los Andes",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Aguilares",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Concepción",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Tafí Viejo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Pilar Observatorio",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Victorica",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Añatuya",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Miramar",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Carmen de Patagones",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "General José de San Martín",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "San Francisco",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Marcos Juárez",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Villa María",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "La Carlota",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Goya",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Empedrado",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Curuzú Cuatiá",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Monte Caseros",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "La Paz",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Concordia",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Concepción del Uruguay",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Colón",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Gualeguay",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Clorinda",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Pirané",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Eduardo Castex",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "25 de Mayo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "General Acha",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "General Pico",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Intendente Alvear",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Mercedes",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Villa de María",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Casilda",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Río Colorado",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "San Antonio Oeste",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "El Bolsón",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Puerto Deseado",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Puerto San Julián",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Tostado",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Caleta Olivia",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "San Javier",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Sastre",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Rafaela",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Las Rosas",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "El Trebol",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Ceres",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Venado Tuerto",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Melincué",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Frias",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Tolhuin",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Bell Ville",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Pinamar",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Santa Teresita",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "San Bernardo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "San Cristóbal",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Salta",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Puerto Iguazú",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Bernardo de Irigoyen",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Comodoro Rivadavia",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Presidencia Roque Sáenz Peña",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "San Salvador de Jujuy",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Malargüe",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Posadas",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Tartagal",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Eldorado",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Perico",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Villa Ángela",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Ituzaingo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Las Lomitas",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Palpala",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "San Pedro de Jujuy",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Libertador Gral San Martín",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Apóstoles",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Oberá",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Rivadavia",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Metán",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "San Ramón de La Nueva Orán",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Base San Martín",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Villa Dolores",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Maquinchao",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Neuquén",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Zapala",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Cutral Co",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Villa Regina",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Cipolletti",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "General Roca",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "San Carlos de Bolívar",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "9 de Julio",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Pergamino",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Junín",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Chacabuco",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "General Villegas",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Cruz del Eje",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Coronel Pringles",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Pigüé",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Coronel Suarez",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Monte Hermoso",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Tres Arroyos",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Bahía Blanca",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Río Tercero",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "San Luis",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Almafuerte",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Santa Rosa del Conlara",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Villa Reynolds",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "La Toma",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Justo Daract",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Villa General Belgrano",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Villa Huidobro",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Río Cuarto",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Coronel Moldes",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "San Rafael",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "General Alvear",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Paso de Indios",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Puerto Madryn",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Trelew",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Rawson",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Dolores",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "San Fernando del Valle de Catamarca",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Pehuajó",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Azul",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Olavarría",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Trenque Lauquen",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "La Rioja",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Chamical",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Chepes",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Cosquin",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Capital Federal",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "webhooks": [
+    {
+      "url": "https://us-south.functions.cloud.ibm.com/api/v1/web/653e19ca-bbb0-4584-ad12-96700a715ba4/default/function_clima.json",
+      "name": "main_webhook",
+      "headers": []
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Por favor, indique una ciudad"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1582113962254",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1582113962254",
+      "previous_sibling": "handler_6_1582113962254"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1582113962254",
+      "context": {
+        "ciudad": "@ciudad"
+      },
+      "conditions": "@ciudad",
+      "event_name": "input",
+      "dialog_node": "handler_6_1582113962254"
+    },
+    {
+      "type": "slot",
+      "parent": "node_2_1582056285667",
+      "variable": "$ciudad",
+      "dialog_node": "slot_1_1582056302661",
+      "previous_sibling": "node_4_1582113962242"
+    },
+    {
+      "type": "standard",
+      "title": "API_call",
+      "output": {},
+      "parent": "node_2_1582056285667",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "city": "$ciudad"
+          },
+          "result_variable": "webhook_result_1"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1582114693993"
+      },
+      "conditions": "$ciudad",
+      "dialog_node": "node_4_1582113962242"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Por favor, indique una ciudad"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_1_1582056302661",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1582056302706",
+      "previous_sibling": "handler_3_1582056302706"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_1_1582056302661",
+      "context": {
+        "ciudad": "@ciudad"
+      },
+      "conditions": "@ciudad",
+      "event_name": "input",
+      "dialog_node": "handler_3_1582056302706"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "El clima en $ciudad está $webhook_result_1.clima"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1582113962242",
+      "conditions": "$webhook_result_1",
+      "dialog_node": "response_8_1582113962254",
+      "previous_sibling": "node_7_1582114693993"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "The callout generated this error: <? output.webhook_error.webhook_result_1 ?>."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_4_1582113962242",
+      "conditions": "anything_else",
+      "dialog_node": "response_9_1582113962254",
+      "previous_sibling": "response_8_1582113962254"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_4_1582113962242",
+      "variable": "$ciudad",
+      "dialog_node": "slot_5_1582113962254",
+      "previous_sibling": "response_9_1582113962254"
+    },
+    {
+      "type": "standard",
+      "title": "Comentar_Temperatura",
+      "parent": "node_4_1582113962242",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "",
+      "dialog_node": "node_7_1582114693993"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "$webhook_result_1.temperatura"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_7_1582114693993",
+      "conditions": "anything_else",
+      "dialog_node": "response_10_1582115724528",
+      "previous_sibling": "response_8_1582114853521"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Con $webhook_result_1.temperatura grados, mejor quedarse a la sombra"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_7_1582114693993",
+      "conditions": "$webhook_result_1.temperatura>=27.0",
+      "dialog_node": "response_8_1582114853521",
+      "previous_sibling": "response_7_1582114826838"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "$webhook_result_1.temperatura grados no está mal, podrías salir a dar un paseo"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_7_1582114693993",
+      "conditions": "$webhook_result_1.temperatura< 27.0",
+      "dialog_node": "response_7_1582114826838",
+      "previous_sibling": "response_4_1582114751529"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Mejor quedarse en casa "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1582114693993",
+      "conditions": "$webhook_result_1.temperatura < 10.0",
+      "dialog_node": "response_4_1582114751529"
+    },
+    {
+      "type": "standard",
+      "title": "En otras cosas",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "No le he entendido. Intente reformular la consulta."
+              },
+              {
+                "text": "¿Puede expresarse con otras palabras? No le he entendido."
+              },
+              {
+                "text": "No entendí el significado."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "En otras cosas",
+      "previous_sibling": "node_2_1582056285667",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "frame",
+      "title": "Chequear_Ciudad",
+      "metadata": {
+        "callout": {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "city": "$ciudad"
+          },
+          "result_variable": "webhook_result_1"
+        },
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#Pedir_Datos_Clima",
+      "dialog_node": "node_2_1582056285667",
+      "previous_sibling": "Bienvenido"
+    },
+    {
+      "type": "standard",
+      "title": "Bienvenido",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hola. ¿Cómo puedo ayudarle?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {},
+      "conditions": "welcome",
+      "dialog_node": "Bienvenido"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Querías decir:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Ninguna de las anteriores"
+    },
+    "human_agent_assist": {
+      "prompt": "Querías decir:"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "Clima",
+  "language": "es",
+  "description": ""
+}
