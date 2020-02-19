@@ -78,50 +78,72 @@ Importá el archivo [skill-Clima.json](/skill-Clima.json)
 ### Armar asistente de manera manual
 1. Creá un nuevo skill en español.
 ![Crear skill](/img/12CreateSkill.gif)
-1. Una vez creado, vas a ver la pantalla de _Intents_ (intenciones) 
+2. Una vez creado, vas a ver la pantalla de _Intents_ (intenciones) 
 ![Intents](/img/13Intents.png)
 <br>Las Intenciones son las acciones que el usuario del asistente desea realizar, en nuestro caso, obtener información del clima. Al reconocer la intención expresada en una entrada de usuario, el servicio Watson Assistant puede elegir el flujo de diálogo correcto para responder a la misma.<br>Crea una nueva intención llamada `Pedir_Datos_Clima`.
 
 ![Intents](/img/14IntentName.png)
 
 Cargale ejemplos de cómo un usuario pediría esa información.
-![Intents](/img/15IntentExamples.gif)
-1. Ingresá a la opción _Entities_ (entidades) <br> Las entidades representan a los sustantivos: el objeto o el contexto de una acción. En nuestro caso, las ciudades que sabemos que la API del SMN reporta. <br> Por eso, vamos a crear una entidad llamada `Ciudad` y le vamos a cargar la lista de ciudades. Como en total son más de 200, te recomiendo que cargues solo las que vas a usar por el momento, o que vuelvas a la opción de Importar el skill donde ya están todas cargadas.
-![Entities](/img/16Entities.png)
-1. Ingresá a la opción _Dialog_ (Diálogo) Por defecto, ya vienen los nodos "Bienvenido" y "en otras cosas".
-![Default dialog](/img/17DialogStart.png)
-<br>Vamos a crear un nuevo nodo al que voy a llamar `Pedir_Info_Clima`. 
-    1. Como condición del nodo, agregá `#Pedir_Datos_Clima` (o el nombre que hayas usado para tu intent)<br>
-    ![Create node](/img/18CreateNode.gif) 
-    <br>
-    1. Desde la opción _Customize_ habilitá los slots para ese nodo. Esto permite que el assistant pueda contestar con los datos de la ciudad ingresada o pedir que se ingrese una ciudad si el usuario no lo hizo.<br>
-    1. Esto habilita una nueva sección en donde vas a tener que configurar que el assistant chequee por `@ciudad`. Si el usuario indicó una ciudad, la misma se guarda en la variable de entorno `$ciudad`. Si no, el assistant va a preguntar por ella con el texto que definamos en _If not present, then ask_
-    ![Create node](/img/19SlotConfig.gif)
-    <br>
-1. Ahora vamos al menú _Options > Webhooks_. En URL vas a tener que agregar la URL pública de tu función, que guardaste en el punto 6 de la Parte 1. Al final de la URL agregá `.json`
-![Create node](/img/20Webhooks.png)
-1. Volvé a tu nodo `Pedir_Info_Clima` y creá un child node que se llame `API_call` y en _Customize_, habilitá la opción "Webhook". Esto va a habilitar otra sección nueva en el nodo para incluir la información que le vamos a mandar a la función como parámetro.
-*Key* `city` *Value* `El clima en $ciudad está $webhook_result_1.clima`
-![Create node](/img/21Webhookconfig.gif)
-Una vez que están configurados los parámetros, en la respuesta, incluí el texto que quieras responder. Por ejemplo:
-*If assistant recognizes* `$webhook_result_1` *Respond with* `El clima en $ciudad está $webhook_result_1.clima`
-1. Volvé al nodo `Pedir_Info_Clima` y asegurate de setear para que saltee la interacción con el usuario.
-![Create node](/img/22JumpNode.png)
+![Intents](/img/15IntentExamples.gif) <br>
 
-### Bonus Track:
+3. Ingresá a la opción _Entities_ (entidades) <br> 
+Las entidades representan a los sustantivos: el objeto o el contexto de una acción. En nuestro caso, las ciudades que sabemos que la API del SMN reporta. <br> 
+Por eso, vamos a crear una entidad llamada `Ciudad` y le vamos a cargar la lista de ciudades. Como en total son más de 200, te recomiendo que cargues solo las que vas a usar por el momento, o que vuelvas a la opción de Importar el skill donde ya están todas cargadas.
+
+![Entities](/img/16Entities.png) <br>
+
+4. Ingresá a la opción _Dialog_ (Diálogo) Por defecto, ya vienen los nodos "Bienvenido" y "en otras cosas".
+![Default dialog](/img/17DialogStart.png) <br>
+
+Vamos a crear un nuevo nodo al que voy a llamar `Pedir_Info_Clima`. <br>
+   a) Como condición del nodo, agregá `#Pedir_Datos_Clima` (o el nombre que hayas usado para tu intent)<br>
+    ![Create node](/img/18CreateNode.gif)<br>
+
+
+   b) Desde la opción _Customize_ habilitá los slots para ese nodo. Esto permite que el assistant pueda contestar con los datos de la ciudad ingresada o pedir que se ingrese una ciudad si el usuario no lo hizo.
+    
+   c) Esto habilita una nueva sección en donde vas a tener que configurar que el assistant chequee por `@ciudad`. Si el usuario indicó una ciudad, la misma se guarda en la variable de entorno `$ciudad`. Si no, el assistant va a preguntar por ella con el texto que definamos en _If not present, then ask_
+   <br>
+![Create node](/img/19SlotConfig.gif)
+    <br>
+
+5. Ahora vamos al menú _Options > Webhooks_. En URL vas a tener que agregar la URL pública de tu función, que guardaste en el punto 6 de la Parte 1. Al final de la URL agregá `.json`
+![Create node](/img/20Webhooks.png) <br>
+
+6. Volvé a tu nodo `Pedir_Info_Clima` y creá un child node que se llame `API_call` y en _Customize_, habilitá la opción "Webhook". Esto va a habilitar otra sección nueva en el nodo para incluir la información que le vamos a mandar a la función como parámetro. <br>
+*Key* `city` *Value* `El clima en $ciudad está $webhook_result_1.clima`
+
+![Create node](/img/21Webhookconfig.gif) <p>
+
+Una vez que están configurados los parámetros, en la respuesta, incluí el texto que quieras responder. Por ejemplo:
+* If assistant recognizes * `$webhook_result_1` * Respond with * `El clima en $ciudad está $webhook_result_1.clima`
+
+7. Volvé al nodo `Pedir_Info_Clima` y asegurate de setear para que saltee la interacción con el usuario.
+![Create node](/img/22JumpNode.png) 
+<br>
+
+
+## Bonus Track:
 La función que armamos también devuelve en el JSON la temperatura. Podés chequear en el nombre.skill para saber como crear respuestas condicionales en base al valor de esa temperatura.
 
 ![Create node](/img/TryItOut.gif)
 
 ## Material de Referencia:
 Terminología IBM Cloud™ Functions: https://cloud.ibm.com/docs/openwhisk?topic=cloud-functions-about&locale=es
+
 How to invoke an external REST API from a cloud function: https://maxkatz.org/2018/07/20/how-to-invoke-an-external-rest-api-from-a-cloud-function/
+
 Iniciación a Functions: https://cloud.ibm.com/docs/openwhisk?topic=cloud-functions-getting-started&locale=es
+
 Información sobre la API del SMN: http://foro.gustfront.com.ar/viewtopic.php?t=5252
+
 Iniciación a Watson Assistant: https://cloud.ibm.com/docs/services/assistant?topic=assistant-getting-started&locale=es
+
 Watson Assistant Webhooks: https://cloud.ibm.com/docs/services/assistant?topic=assistant-dialog-webhooks
 
 ## Troubleshooting:
-- *Problema* Cuando llamo a la API me sale _The callout generated this error: {"message":"Connection to Webhook failed. No response."}._
+*Problema* Cuando llamo a la API me sale _The callout generated this error: {"message":"Connection to Webhook failed. No response."}._
+
 *Solución* Andá a la parte de webhooks de Watson Assistant y agregá `.json` al final de la URL de tu función.
 
